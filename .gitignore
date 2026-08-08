@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+.vercel/
+coverage/
+*.log
+*.pem
+*.key
+*.p12
+*.mobileprovision

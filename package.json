@@ -1,0 +1,12 @@
+{
+  "name": "ai-application-engineering-case-studies",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test examples/**/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
