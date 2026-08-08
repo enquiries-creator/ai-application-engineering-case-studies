@@ -22,7 +22,7 @@ The repository includes a small [visual gallery](index.html) plus sanitized prod
 | Product surface | Evidence |
 | --- | --- |
 | Mobile distribution | [App Store listing](assets/app-store-listing.png) · [Google Play listing](assets/google-play-listing.png) |
-| Learning platform | [Admin overview](assets/lms_overview.jpg) · [Student home](assets/lms_mobile_student_home.jpg) · [Spotify music surface](assets/lms_mobile_music.png) |
+| Learning platform | [Admin overview](assets/lms_overview-redacted.jpg) · [Student home](assets/lms_mobile_student_home.jpg) · [Spotify music surface](assets/lms_mobile_music.png) |
 | CRM and agents | [CRM dashboard](assets/dashboard_revenue.jpg) · [Agent manager](assets/mobile_agent_manager.jpg) · [Workforce activity](assets/mobile_workforce.jpg) |
 
 These are included to make the case studies tangible. Sensitive values and names are locally masked where needed; the interface structure remains visible.
