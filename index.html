@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI application engineering case studies</title>
+  <style>
+    :root{--bg:#0b0e13;--panel:#121821;--line:#2b3642;--text:#eef2f5;--muted:#9ba8b5;--accent:#ff6a1f;--cyan:#5bd0df}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 Inter,ui-sans-serif,system-ui,sans-serif}main{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:72px 0 100px}a{color:var(--accent)}.kicker{color:var(--accent);font:11px/1.2 ui-monospace,SFMono-Regular,monospace;letter-spacing:.14em;text-transform:uppercase}h1{max-width:760px;font-size:clamp(36px,6vw,72px);line-height:1.02;letter-spacing:-.05em;margin:20px 0}.intro{max-width:720px;color:var(--muted);font-size:18px}.bar{display:flex;flex-wrap:wrap;gap:10px;margin:32px 0 66px}.bar a{border:1px solid var(--line);padding:9px 13px;text-decoration:none;font:12px ui-monospace,SFMono-Regular,monospace}.bar a:hover{border-color:var(--accent)}h2{font-size:28px;letter-spacing:-.03em;margin:0 0 10px}.section{border-top:1px solid var(--line);padding-top:30px;margin-top:54px}.section>p{color:var(--muted);max-width:720px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}.card{background:var(--panel);border:1px solid var(--line);overflow:hidden}.card img{display:block;width:100%;height:auto}.card .copy{padding:17px 18px 19px}.card h3{margin:0 0 5px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}.wide{grid-column:1/-1}.wide img{max-height:560px;object-fit:cover;object-position:top}.tag{color:var(--cyan);font:10px ui-monospace,SFMono-Regular,monospace;letter-spacing:.12em;text-transform:uppercase}.footer{border-top:1px solid var(--line);margin-top:72px;padding-top:22px;color:var(--muted);font-size:13px}@media(max-width:720px){main{width:min(100% - 28px,1180px);padding-top:42px}.grid{grid-template-columns:1fr}.wide{grid-column:auto}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="kicker">Kieran Stapleton · technical portfolio</div>
+  <h1>AI application engineering, with the evidence attached.</h1>
+  <p class="intro">A visual index of selected systems, product surfaces and representative engineering patterns. The production repositories are private; this public companion contains sanitized screenshots, architecture notes, mock data and small examples that explain how the systems are put together.</p>
+  <nav class="bar"><a href="case-studies/industry-dj-school.md">Industry DJ School</a><a href="case-studies/dj-hub-nz.md">DJ Hub NZ</a><a href="case-studies/answer-line.md">The Answer Line</a><a href="architecture/system-overview.md">Architecture</a><a href="https://stapleton.vercel.app/">Full portfolio ↗</a></nav>
+
+  <section class="section">
+    <div class="tag">01 · shipped product</div><h2>Learning platform and mobile apps</h2>
+    <p>One product across web, iOS and Android: course progress, protected lessons, booking, coaching and a Spotify-connected music surface.</p>
+    <div class="grid">
+      <article class="card wide"><img src="assets/app-store-listing.png" alt="Industry DJ School App Store listing with four mobile screens"><div class="copy"><h3>App Store listing</h3><p>Product identity and shipped iPhone surfaces in their store context.</p></div></article>
+      <article class="card"><img src="assets/google-play-listing.png" alt="Industry DJ School Google Play listing"><div class="copy"><h3>Google Play listing</h3><p>The Android distribution surface for the same product.</p></div></article>
+      <article class="card"><img src="assets/lms_mobile_music.png" alt="Student app music screen with curated Spotify playlists"><div class="copy"><h3>Music surface</h3><p>Curated Spotify playlists, preview playback and save-to-library actions.</p></div></article>
+      <article class="card"><img src="assets/lms_overview.jpg" alt="LMS admin overview dashboard"><div class="copy"><h3>Admin overview</h3><p>Course progress, enrolment state, quiz gating and operational reporting.</p></div></article>
+      <article class="card"><img src="assets/lms_mobile_student_home.jpg" alt="Student app home screen"><div class="copy"><h3>Student home</h3><p>Progress at a glance with a one-tap resume path.</p></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="tag">02 · operating system</div><h2>CRM, agents and shared tools</h2>
+    <p>The interesting part is the boundary between AI and operations: agents call controlled tools, staff use the same contracts, and writes remain auditable.</p>
+    <div class="grid">
+      <article class="card wide"><img src="assets/dashboard_revenue.jpg" alt="Sanitized CRM dashboard with KPI cards, pipeline and next-best actions"><div class="copy"><h3>CRM operating surface</h3><p>Pipeline, next-best actions, reporting and revenue views. Sensitive values and names are locally blurred; the UI structure remains visible.</p></div></article>
+      <article class="card"><img src="assets/analytics_contacts.jpg" alt="Sanitized CRM contact analytics screen"><div class="copy"><h3>Lifecycle analytics</h3><p>Contact stages and trend views connected to the same operating data.</p></div></article>
+      <article class="card"><img src="assets/mobile_agent_manager.jpg" alt="Sanitized mobile agent manager screen"><div class="copy"><h3>Agent manager</h3><p>Human approval before an AI workforce change takes effect.</p></div></article>
+      <article class="card"><img src="assets/mobile_workforce.jpg" alt="Sanitized mobile AI workforce activity screen"><div class="copy"><h3>Workforce activity</h3><p>Calls, messages and agent activity surfaced for review.</p></div></article>
+      <article class="card"><div class="copy"><div class="tag">Private system · text case study</div><h3>Sales copilot</h3><p>Pre-call context, live coaching and post-call follow-up in one workflow. Screenshots and call content remain private.</p></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="tag">03 · implementation patterns</div><h2>Readable code, explicit boundaries</h2>
+    <p>See the <a href="examples/README.md">representative examples</a> for signature verification, idempotent webhooks and authorized agent tools. The full system boundary is documented in the <a href="architecture/system-overview.md">architecture overview</a>.</p>
+  </section>
+  <div class="footer">All images use demo or sanitized data. No production credentials, customer records or private infrastructure access are included. <a href="https://stapleton.vercel.app/">View the complete portfolio ↗</a></div>
+</main>
+</body>
+</html>

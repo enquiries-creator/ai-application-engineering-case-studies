@@ -15,6 +15,18 @@ This repository is designed for technical review. It documents the systems, deci
 
 Portfolio: [stapleton.vercel.app](https://stapleton.vercel.app/)
 
+## Visual evidence
+
+The repository includes a small [visual gallery](index.html) plus sanitized product captures. A few representative surfaces are shown below:
+
+| Product surface | Evidence |
+| --- | --- |
+| Mobile distribution | [App Store listing](assets/app-store-listing.png) · [Google Play listing](assets/google-play-listing.png) |
+| Learning platform | [Admin overview](assets/lms_overview.jpg) · [Student home](assets/lms_mobile_student_home.jpg) · [Spotify music surface](assets/lms_mobile_music.png) |
+| CRM and agents | [CRM dashboard](assets/dashboard_revenue.jpg) · [Agent manager](assets/mobile_agent_manager.jpg) · [Workforce activity](assets/mobile_workforce.jpg) |
+
+These are included to make the case studies tangible. Sensitive values and names are locally masked where needed; the interface structure remains visible.
+
 ## What is intentionally included
 
 - Architecture diagrams and system boundaries
